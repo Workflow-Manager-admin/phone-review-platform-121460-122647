@@ -1,54 +1,40 @@
-# Remotion video
+# Phone Review Platform Frontend (Remotion)
 
-<p align="center">
-  <a href="https://github.com/remotion-dev/logo">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-dark.gif">
-      <img alt="Animated Remotion Logo" src="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-light.gif">
-    </picture>
-  </a>
-</p>
+This is the Remotion-based frontend for the Phone Review Platform, allowing users to:
+- Browse featured and all phone review videos
+- Search and filter reviews by title/author
+- Watch video reviews (inline modal player)
+- Submit new phone review videos using an upload modal
+- Rate and comment on reviews
+- Enjoy a modern, responsive, light-themed user experience
 
-Welcome to your Remotion project!
+## Structure
 
-## Commands
+- `src/App.tsx` - Main app with layout, state, and feature wiring
+- `src/components/Theme.tsx` - Centralized theme tokens
+- `src/components/Header.tsx` - Top bar with search and add review
+- `src/components/FeaturedReviews.tsx` - Responsive featured review grid
+- `src/components/VideoReviewList.tsx` - Grid of other reviews, rate/comment/video modal
+- `src/components/ReviewModal.tsx` - Modal for submitting reviews
 
-**Install Dependencies**
+## Quick Start
 
-```console
-npm i
 ```
-
-**Start Preview**
-
-```console
+npm install
 npm run dev
 ```
 
-**Render video**
+You can now browse and interact with the Phone Review Platform UI.
 
-```console
-npx remotion render
-```
+## Style Guide
 
-**Upgrade Remotion**
+Uses the following theme colors:
+- Primary: #1976D2 (Blue, header/cta)
+- Secondary: #424242 (Muted gray)
+- Accent: #FFC107 (Rating buttons/highlights)
+- Responsive, modern layout using CSS-in-JS for demonstration purposes.
 
-```console
-npx remotion upgrade
-```
+## License & Support
 
-## Docs
+This project is demo frontend for a video review platform utilizing Remotion and React UI principles.
 
-Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
-
-## Help
-
-We provide help on our [Discord server](https://discord.gg/6VzzNDwUwV).
-
-## Issues
-
-Found an issue with Remotion? [File an issue here](https://github.com/remotion-dev/remotion/issues/new).
-
-## License
-
-Note that for some entities a company license is needed. [Read the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
